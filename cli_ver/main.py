@@ -12,10 +12,10 @@ def load_json(file:str) ->list:
         return key
 
 # Global variables    
-FILE = 'key.json'    
+FILE = os.path.join(os.path.dirname(__file__), 'key.json')   
 API_KEY = load_json(FILE)
 HEADERS = {'apikey': API_KEY['key']}
-
+CURRENCIES_PATH = os.path.join(os.path.dirname(__file__), 'currencies.json')
 URL_CURRENCIES = 'https://api.currencyapi.com/v3/currencies'
 URL_HISTORY = 'https://api.currencyapi.com/v3/historical/'
 
@@ -53,8 +53,8 @@ def read_currencies(response: requests.models.Response) -> None:
 
     for currency in json_data['data']:       
         currencies_dict['currency'].extend([currency])
-
-    with open('currencies.json', 'w') as save_currencies:
+    
+    with open(CURRENCIES_PATH, 'w') as save_currencies:
         json.dump(currencies_dict, save_currencies)
 
 
@@ -73,7 +73,7 @@ def user_input(text_to_print: str,
 
             # Only for input currency and ouput currency
             if input_currency is not False or output_multiple_currency is not False:
-                currency_acronym = load_json('currencies.json')
+                currency_acronym = load_json(CURRENCIES_PATH)
 
                 # Only for input currency
                 if input_value in currency_acronym['currency'] and input_currency is not False:
