@@ -37,7 +37,16 @@ API version will run on your localhost on port 8000 (http://127.0.0.1:8000/ to u
 
 | Endpoint | Description |
 | --- | --- |
-| `currency_history` | Returns historical currency exchange rate |
+| `currency_history` | Returns historical conversion based on user parameters |
+
+**Parameters for currency_history endpoint:**
+
+| Endpoint | Description |
+| --- | --- |
+| `base_currency` | The currency the user wants to convert to. Use acronyms of currencies, capitalized (185 currencies are available u can find them in currencies.json) **Required**. |
+| `currencies` | Currencies the user wants to convert to **Required**. |
+| `amount` | Amount of base currency that user want to convert. Remember to use dots instead of comma for decimal value **Required**. |
+| `date` | Date of historical currency exchange rate. This should be in format: YYYY-MM-DD **Required**. |
 
 ## Examples:
 **CLI version:**
