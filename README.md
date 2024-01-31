@@ -33,11 +33,11 @@ Simple program that allows user to get historical currency exchange rate (data p
 ```
 API version will run on your localhost on port 8000 (http://127.0.0.1:8000/ to use swagger u need to adjust docs#)
 
-**Available endpoints**
+**Available endpoints:**
 
 | Endpoint | Description |
 | --- | --- |
-| `currency_history` | Returns historical currency exchange rate of currencies and date specified by user |
+| `currency_history` | Returns historical currency exchange rate |
 
 ## Examples:
 **CLI version:**
