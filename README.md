@@ -1,7 +1,7 @@
 
 # Historical data of currency exchange rate
 
-Simple program that allows user to get historical currency exchange rate (data provided by https://currencyapi.com). To get started u need to create account on their website and save api key in json file: key.json, but remember that u have only 300 requests per month on free trial.
+Simple program that allows user to get historical currency exchange rate (data provided by https://currencyapi.com). To get started you need to create account on their website and save api key in json file: key.json, but remember that you have only 300 requests per month on free trial.
 
 
 
@@ -44,7 +44,7 @@ API version will run on your localhost on port 8000 (http://127.0.0.1:8000/ or h
 | Parameters | Description |
 | --- | --- |
 | `base_currency` | The currency that user wants to convert. Use acronyms of currencies, capitalized (185 currencies are available you can find them in currencies.json). **Required** |
-| `currencies` | Currencies/currency the user wants to convert to. Use acronyms of currencies, capitalized if u want to get more than one currency, separate them with commas (185 currencies are available you can find them in currencies.json **Required** |
+| `currencies` | Currencies/currency the user wants to convert to. Use acronyms of currencies, capitalized if you want to get more than one currency, separate them with commas (185 currencies are available you can find them in currencies.json **Required** |
 | `amount` | Amount of base currency that user want to convert. Remember to use dots instead of comma for decimal value. **Required** |
 | `date` | Date of historical currency exchange rate. This should be in format: YYYY-MM-DD. Also https://currencyapi.com only provide data since 1999. **Required** |
 
