@@ -31,7 +31,7 @@ Simple program that allows user to get historical currency exchange rate (data p
 ```bash
   cd fastapi_ver && uvicorn app:app --reload
 ```
-API version will run on your localhost on port 8000 (http://127.0.0.1:8000/ to use swagger u need to adjust docs#)
+API version will run on your localhost on port 8000 (http://127.0.0.1:8000/ or http://localhost:8000/ to use swagger u need to adjust docs#)
 
 **Available endpoints:**
 
