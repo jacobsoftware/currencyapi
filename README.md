@@ -37,7 +37,7 @@ API version will run on your localhost on port 8000 (http://127.0.0.1:8000/ to u
 
 | Endpoint | Description |
 | --- | --- |
-| 'currency_history' | Returns historical currency exchange rate of currencies and date specified by user |
+| `currency_history` | Returns historical currency exchange rate of currencies and date specified by user |
 
 ## Examples:
 **CLI version:**
