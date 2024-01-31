@@ -41,7 +41,7 @@ API version will run on your localhost on port 8000 (http://127.0.0.1:8000/ to u
 
 **Parameters for currency_history endpoint:**
 
-| Endpoint | Description |
+| Parameters | Description |
 | --- | --- |
 | `base_currency` | The currency the user wants to convert to. Use acronyms of currencies, capitalized (185 currencies are available you can find them in currencies.json). **Required** |
 | `currencies` | Currencies/currency the user wants to convert to. **Required** |
